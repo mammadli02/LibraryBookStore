@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+
+  --ColorRed: #720418;
+  --ColorOrange: #e16a00;
+  --ColorDarkGreen: #241400;
+  --bookname2: #030102;
+  --textcolor: #333333;
+  --ininput: #adadad;
+  --ColorPink: #fffaf5;
+  --Orangebutton: #ff8b00;
+  --Orange2: #e16a00;
+  --BLACK: #000;
+  --Brown: #241400;
+  --White: #ffffff;
+  --White2: #f1f1f1;
+  --Black2: rgba(7, 16, 7, 0.8);
+  --Brown2: #391f00;
+  --catalogBlackColor: #241400;
+  --white: #fff;
+  /* Fonts */
+
+  --MontserratFont: "Montserrat", sans-serif;
+  --CrimsonTextFont: "Crimson Text", serif;
+  --RobotoFont: "Roboto", sans-serif;
+  --RubikFont: "Rubik", sans-serif;
+  --NunitoSansFont: "Nunito Sans", sans-serif;
+  --PreahvihearFont: "Preahvihear", sans-serif;
+}

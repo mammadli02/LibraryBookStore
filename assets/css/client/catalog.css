@@ -1,0 +1,193 @@
+/* ************************************** */
+/* Carousel */
+.owl-dots {
+  display: none;
+}
+.owl-nav {
+  font-size: 50px;
+  color: var(--mainRedColor);
+  position: absolute;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-nav button:hover {
+  background: transparent !important;
+  color: var(--BLACK) !important;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  margin-right: -30px !important;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  margin-left: -30px !important;
+}
+#active {
+  color: var(--Orange2);
+}
+.navbar-light .navbar-toggler {
+  color: var(--Brown);
+  border: none;
+}
+.prev-button {
+  background-color: var(--BLACK);
+  color: var(--White);
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+}
+.next-button {
+  background-color: var(--BLACK);
+  color: var(--White);
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+}
+/* ******************************************** */
+/* main */
+.catalogSection {
+  margin-left: 15% !important;
+  width: 75%;
+}
+.content {
+  margin-bottom: 128px;
+}
+.catalogul .categoryAll:hover {
+  color: var(--Orange2);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.catalogul .categoryAll:active {
+  color: var(--Orange2);
+}
+.catalogul .active {
+  color: var(--Orange2);
+}
+.cataloglist {
+  display: flex;
+  margin-bottom: 30px;
+}
+.catalogul {
+  margin: auto;
+  width: 400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.catalogul::-webkit-scrollbar-track {
+  background: var(--White2);
+  border-radius: 5px;
+}
+.catalogul::-webkit-scrollbar-thumb {
+  background: var(--Brown2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  width: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Black2);
+}
+.catalogul li {
+  margin-bottom: 15px;
+}
+.catalogul li a {
+  margin-right: 40px;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--Brown);
+  text-decoration: none;
+}
+.allbooks {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 49px;
+  color: var(--Brown);
+}
+.newBook {
+  background-color: #eb5757;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: 900;
+  font-size: 9px;
+  font-family: var(--MontserratFont);
+  color: #fff;
+  line-height: 18px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
+}
+.card {
+  background-color: var(--White);
+  margin-top: 40px;
+  width: 200px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
+}
+.card img {
+  padding: 20px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--MontserratFont);
+}
+.card-text {
+  font-weight: 400;
+  font-size: 12px;
+}
+.catalogbtn {
+  background-color: var(--Orange2);
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border-radius: 3px;
+  border: none;
+  width: 136px;
+  padding: 10px;
+  margin-top: 16px;
+}
+.catalogbtn a {
+  color: var(--White);
+  font-size: 12px;
+  font-family: var(--MontserratFont);
+  font-weight: 900;
+}
+
+.besteller {
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--Brown);
+  text-align: center;
+  margin: 120px auto 50px;
+}
+
+/* ********************************************* */
+/* Responsive design */
+@media screen and (max-width: 320px) {
+  .card {
+    margin-left: 45px !important;
+  }
+  .catalogSection {
+    width: 90% !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .cataloglist {
+    flex-wrap: wrap;
+  }
+  .owl-next img,
+  .owl-prev img {
+    display: none;
+  }
+}

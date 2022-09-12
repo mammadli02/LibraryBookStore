@@ -1,0 +1,161 @@
+/* *********************************** */
+/* Home Section */
+.homeSection {
+  width: 80%;
+  margin: 10% 16%;
+}
+.homeContent {
+  width: 30%;
+}
+.homeTitle {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 70px;
+  color: var(--ColorDarkGreen);
+}
+.homeText {
+  font-weight: 900;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--ColorDarkGreen);
+}
+.homeSection button {
+  width: 212px;
+  height: 50px;
+  background-color: var(--ColorOrange);
+  border: none;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: left;
+}
+.homeSection button:hover {
+  background-color: #c85e02;
+}
+.homeBtn a:hover {
+  text-decoration: none;
+}
+.homeImg img {
+  width: 100%;
+}
+
+/* ***************************** */
+/* Catalog Section */
+.catalogSection {
+  margin-top: 60px;
+}
+.catalogSection p {
+  font-weight: 900;
+  line-height: 50px;
+}
+.catalogSectionBox {
+  width: 80%;
+  margin: 0 auto;
+}
+.catalogSectionBox div {
+  width: 242px;
+  height: 76px;
+  margin: 36px auto;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.catalogSectionBox div a {
+  color: var(--ColorDarkGreen);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+/* **************************************** */
+/* About Store Section */
+.aboutStoreSection {
+  margin-top: 130px;
+}
+.aboutStoreTitle {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 49px;
+  color: var(--ColorDarkGreen);
+  margin-top: 32px;
+}
+.aboutStoreContent div {
+  margin-left: 55px;
+}
+.aboutStoreContent span {
+  line-height: 98px;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 98px;
+  color: var(--ColorDarkGreen);
+  margin-right: 20px;
+}
+.aboutStoreContent p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  color: var(--ColorDarkGreen);
+}
+
+/* ************************************* */
+/* Delivery Section */
+.deliverySection {
+  margin-top: 160px;
+}
+.deliverySectionTitle {
+  margin-bottom: 42px;
+  line-height: 49px;
+  font-weight: 900;
+  color: var(--ColorDarkGreen);
+}
+.deliverySectionContent {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--ColorDarkGreen);
+}
+
+/* ********************************************* */
+/* Responsive design */
+
+@media screen and (max-width: 320px) {
+  main {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  /* Home */
+  .homeSection {
+    margin-top: 0;
+  }
+  .homeContent {
+    width: 100%;
+  }
+  .homeTitle {
+    font-size: 26px;
+    line-height: 55px;
+    margin-bottom: 10px;
+  }
+  .homeContent p {
+    margin-bottom: 30px;
+  }
+  .homeSection button {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .homeBtn a {
+    text-align: center;
+  }
+
+  /* Catalog */
+  .catalogSectionBox div {
+    margin-bottom: 10px;
+  }
+
+  /* About */
+  .aboutStoreContent div {
+    margin-left: 20px;
+  }
+}

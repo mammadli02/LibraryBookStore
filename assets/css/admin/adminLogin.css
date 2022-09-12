@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+#adminLoginForm {
+  background-color: var(--ColorRed);
+  height: 100vh;
+}
+.adminLoginImg {
+  margin: 75px 0 121px 35px;
+}
+.adminLoginForm {
+  padding: 54px;
+  width: 40%;
+}
+.adminLoginForm h1 {
+  font-family: var(--MontserratFont);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+}
+.adminLoginForm input,
+button {
+  border: 1px solid #cecece;
+  margin-bottom: 34px;
+  height: 75px;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 18px;
+}
+.adminLoginForm button {
+  margin-top: 84px;
+  font-family: var(--CrimsonTextFont);
+  background-color: var(--ColorOrange);
+}
+.adminLoginForm button:hover {
+  background: #c85e02;
+}
+
+/* For Phone */
+@media only screen and (max-width: 320px) {
+  .adminLoginImg {
+    width: 50%;
+    margin: 11px 0 90px 12px;
+  }
+  .adminLoginForm {
+    padding: 27px 18px 50px;
+    width: 70%;
+  }
+  .adminLoginForm h1 {
+    margin: 20px auto;
+    width: 151px;
+    line-height: 24px;
+    font-size: 20px;
+  }
+  .adminLoginForm input,
+  button {
+    margin-bottom: 22px;
+    height: 40px;
+  }
+  .adminLoginForm button {
+    margin-top: 26px;
+  }
+}

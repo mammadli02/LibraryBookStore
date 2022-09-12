@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Logo -->
+    <link rel="icon" href="./assets/images/./logo.png">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/client/global.css">
+    <title>About Store | Library Book Store</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="position-fixed fixed-top">
+        <div class="clientLogo">
+            <img src="./assets/images/homeLogo.svg" alt="">
+        </div>
+        <nav class="clientPageNavbar">
+            <ul class="d-flex">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./catalog.html">Catalog</a></li>
+                <li><a href="./aboutStore.html" class="font-weight-bold" style="color:var(--ColorOrange)">About
+                        Store</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+                <li><a href="./search.html">Search</a></li>
+            </ul>
+        </nav>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="joinUs bg-transparent border-0 mr-lg-5" data-toggle="modal"
+            data-target="#staticBackdrop">
+            <a type="button" class="btn d-flex align-items-center" data-toggle="modal" data-target="#exampleModal"><img
+                    src="./assets/images/adminLogo.svg" alt=""><span class="ml-lg-2">Join Us</span></a>
+        </button>
+
+        <!-- Mobile Nav start -->
+        <div class="mobileNavClient d-none w-100 position-fixed top-0 pt-5 mt-4">
+            <div class="mobilHeader d-flex align-items-center position-relative ml-3">
+                <div class="mobileLogo mr-4">
+                    <img src="./assets/images/homeLogo.svg" alt="">
+                </div>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="bg-transparent border-0 mr-1" data-toggle="modal"
+                        data-target="#staticBackdrop">
+                        <a type="button" class="btn d-flex align-items-center" data-toggle="modal"
+                            data-target="#exampleModal"><img src="./assets/images/adminLogo.svg" alt=""></a>
+                    </button>
+                    <div>
+                        <img class="clientHamburger" src="./assets/images/hamburgerMenu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobNavMenu d-none">
+            <nav class="mobnavList d-flex flex-column align-items-end position-absolute w-100 vh-100">
+                <div>
+                    <img src="./assets/images/x.svg" class="xbtn" alt="">
+                </div>
+                <ul class="d-flex flex-column align-items-end">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./catalog.html">Catalog</a></li>
+                    <li><a href="./aboutStore.html">About Store</a></li>
+                    <li><a href="./contactUs.html">Contact Us</a></li>
+                    <li><a href="./search.html">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Nav end -->
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="order-lg-2 order-md-1 order-sm-1 order-1">
+                <h2 class="about-title"></h2>
+                <p class="about-description"></p>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-md-1 order-sm-1 order-1">
+                <div class="about-img">
+                    <div class="loadingSpinner ml-lg-5 mb-lg-4">
+                        <img src="./assets/images/spinner.gif" style="width: 200px;" class="d-block rounded-circle  "
+                            alt="">
+                    </div>
+                    <img class="d-block m-auto" src="" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Social Section -->
+        <section class="socialMediaSection container d-flex align-items-center flex-column">
+
+            <div class="socialMediaSectionTitle mb-lg-4">
+                <p class="text-center h4">
+                    Follow us on social media
+                </p>
+            </div>
+            <div class="socialMediaSectionContent d-flex">
+                <a href="https://www.facebook.com" class="mr-1"><img src="./assets/images/facebook.svg"
+                        alt="facebookLink"></a>
+                <a href="https://www.twitter.com" class="mr-1"><img src="./assets/images/twitter.svg"
+                        alt="twitterLink"></a>
+                <a href="https://www.instagram.com"><img src="./assets/images/instagram.svg" alt="instagramLink"></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="d-flex flex-wrap align-items-center justify-content-center pt-lg-3">
+        <div class="my-lg-5 footerContent">
+            <div class="footerLogo">
+                <img src="./assets/images/footerLogo.svg" alt="" />
+            </div>
+            <div class="d-flex flex-wrap footerList">
+                <ul>
+                    <li class=" text-white h5">Popular</li>
+                    <li class=""><a href="" class="text-white">Programming</a></li>
+                    <li class=""><a href="" class="text-white">Books for children</a></li>
+                    <li class=""><a href="" class="text-white">Psychology</a></li>
+                    <li class=""><a href="" class="text-white"> Business </a></li>
+                </ul>
+                <ul>
+                    <li class=" text-white h5">Information</li>
+                    <li class=""><a href="" class="text-white">Delivery</a></li>
+                    <li class=""><a href="" class="text-white">Payment</a></li>
+                    <li class=""><a href="" class="text-white">About the store</a></li>
+                </ul>
+                <ul>
+                    <li class=" text-white h5">Help</li>
+                    <li class=""><a href="" class="text-white">Contacts</a></li>
+                    <li class=""><a href="" class="text-white">Purchase returns</a></li>
+                    <li class=""><a href="" class="text-white">Buyer help</a></li>
+                </ul>
+            </div>
+            <div class="mobileFooterList">
+                <nav>
+                    <ul class="d-flex">
+                        <li><a href="./index.html" class="text-white mr-2">Home</a></li>
+                        <li><a href="./catalog.html" class="text-white mr-2">Catalog</a></li>
+                        <li><a href="./aboutStore.html" class="text-white mr-2">About Store</a></li>
+                        <li><a href="./contactUs.html" class="text-white mr-2">Contact Us</a></li>
+                        <li><a href="./search.html" class="text-white mr-2">Search</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerNumber">
+                <p class="text-white mb-lg-1">+38 (071) 339-16-26</p>
+                <button class="text-left my-lg-1">Request a call </button>
+            </div>
+        </div>
+        <p class="footerNum text-white text-center pb-lg-3">All rights reserved © 2003-2022 LIBRARY TERMS OF USE |
+            Privacy Policy</p>
+        <div class="mobileFooterEnd">
+            <div class="mobileLine bg-white mb-2"></div>
+            <p class="text-white text-center mb-2">Library BookStore EACamp</p>
+            <p class="text-white text-center mb-2"> © 2003-2022 </p>
+        </div>
+    </footer>
+    <!-- Modal Section -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modalSection">
+                <div class="mt-lg-3 h1 font-weight-bolder text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Join Us</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="modalForm">
+                        <div class="form-group">
+                            <label for="inputFullName"></label>
+                            <input type="text" class="form-control pl-lg-5" placeholder="Full name" id="inputFullName">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail"></label>
+                            <input type="email" class="form-control pl-lg-5" id="inputEmail" placeholder="Email"
+                                aria-describedby="emailHelp">
+                            <div class="alert alert-danger mt-lg-4 p-lg-3 alertMsg d-none" role="alert">
+                                Please check form !!!
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-block joinBtn">Join</button>
+                        <div class="alert alert-success mt-lg-3 alertSuccessMsg d-none" role="alert">
+                            <h4 class="alert-heading h3  text-center">Successful!</h4>
+                            <hr>
+                            <p class="mb-lg-0 h4 text-center">Welcome to the Library</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="./assets/js/db.js"></script>
+    <script src="./assets/js/client/about.js"></script>
+    <script src="./assets/js/client/join.js"></script>
+    <script src="./assets/js/client/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* ********************************************** */
+/* Social Section */
+.socialMediaSection {
+  margin: 134px auto;
+}
+.socialMediaSectionTitle p {
+  font-weight: 900;
+  line-height: 49px;
+  color: var(--ColorDarkGreen);
+}
+.socialMediaSectionContent a {
+  cursor: pointer;
+  margin: 0 25px;
+}
+
+/* ******************************************* */
+/* Footer */
+footer {
+  background-color: #391f00;
+}
+.footerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footerLogo {
+  width: 290px;
+  height: 68px;
+}
+.footerList {
+  font-weight: 400;
+  font-size: 18px;
+}
+.footerList ul {
+  margin: 0 45px;
+}
+.footerList ul li a {
+  font-size: 13px;
+  line-height: 26px;
+}
+.footerNumber p {
+  font-weight: 900;
+  font-size: 12px;
+  height: 18px;
+}
+.footerNumber button {
+  line-height: 27px;
+  width: 136px;
+  height: 30px;
+  border: 1px solid var(--ColorOrange);
+  background-color: transparent;
+  color: var(--ColorOrange);
+  font-weight: 500;
+  font-size: 14px;
+}
+.footerNumber button:hover {
+  background-color: var(--ColorOrange);
+  color: #fff;
+}
+.footerNum {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+.mobileFooterList,
+.mobileFooterEnd {
+  display: none;
+}
+
+/* ********************************************* */
+/* Responsive design */
+
+@media screen and (max-width: 320px) {
+  /* Social Bar */
+  .socialMediaSection p {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .socialMediaSectionContent img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Footer */
+  .footerList,
+  .footerNumber,
+  .footerNum {
+    display: none !important;
+  }
+  .mobileFooterList,
+  .mobileFooterEnd {
+    display: block;
+  }
+  .footerLogo {
+    width: 200px;
+    height: 50px;
+    margin-top: 18px;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileFooterList {
+    margin-bottom: 40px;
+  }
+  .mobileFooterList li a,
+  .mobileFooterEnd p {
+    font-size: 10px;
+  }
+  .mobileLine {
+    width: 253px;
+    height: 1px;
+  }
+}

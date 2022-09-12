@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Logo -->
+    <link rel="icon" href="./assets/images/./logo.png">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/admin/global.css">
+    <title>Admin | Library Book Store</title>
+</head>
+
+<body>
+    <!-- Admin Login Start-->
+    <div id="adminLoginForm">
+        <div>
+            <img src="./assets/images/mainLogo.svg" class="adminLoginImg" alt="logoImg">
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <form class="adminLoginForm bg-white">
+                <h1 class="text-center mb-lg-5">Welcome Admin</h1>
+                <input id="userName" class="form-control form-control-lg h6" type="text" placeholder="Username">
+                <input id="userPassword" class="form-control form-control-lg h6" type="password" placeholder="Password">
+                <button type="submit" id="adminJoinButton"
+                    class="btn btn-block h6 font-weight-bold text-white">Join</button>
+            </form>
+        </div>
+    </div>
+    <!-- Admin Login end -->
+
+    <!-- Admin Panel -->
+    <div class="container-fluid" id="AdminPanel">
+        <div class="row">
+            <div class="col-lg-3 position-relative" id="adminPanelNavbar">
+                <div class="position-fixed">
+                    <div class="mainLogo">
+                        <a href="./index.html">
+                            <img src="./assets/images/mainLogo.svg" alt="pageLogo">
+                        </a>
+                    </div>
+                    <div class="mainNavbar">
+                        <nav>
+                            <ul>
+                                <li><a href="#homePage" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>Home</span></a></li>
+                                <li><a href="#menuAboutStore" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>About</span></a></li>
+                                <li><a href="#menuJoin" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>Join Us</span></a>
+                                </li>
+                                <li><a href="#menuContact" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>Contact</span></a>
+                                </li>
+                                <li><a href="#adminLogin" class="text-white d-flex align-items-center"
+                                        id="adminLogout"><img src="./assets/images/bookLogo.svg"
+                                            alt="" /><span>Logout</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 adminpanel pl-lg-4">
+                <div id="adminPanel">
+                    <div class="mobileNav">
+                        <div class="menuHeader fixed-top mb-5 px-3">
+                            <div class="d-flex align-items-center justify-content-between mr-4">
+                                <a class="navbar-brand" href="#"><img src="./assets/images/homeLogo.svg" alt=""></a>
+                                <img class="hamburger" src="./assets/images/hamburgerMenu.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="sideBar d-none">
+                            <div class="row sidebar position-relative">
+                                <div class="col-9 leftSide position-fixed">
+                                    <div class="mobileNavImg d-flex justify-content-between align-items-center">
+                                        <img src="./assets/images/mobileLogo.svg" class="logoImg" alt="">
+                                        <img src="./assets/images/x.svg" class="x-image" alt="">
+                                    </div>
+                                    <ul class="ml-2 mobileNavList">
+                                        <li><a href="#homePage" class="d-flex align-items-center mb-3"><img
+                                                    src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                    class="text-white">Home</span></a></li>
+                                        <li><a href="#menuAboutStore" class="d-flex align-items-center mb-3"><img
+                                                    src="./assets/images/mobileNavBook.svg" class="mr-2 " alt=""><span
+                                                    class="text-white">About</span></a></li>
+                                        <li><a href="#menuJoin" class="d-flex align-items-center mb-3"><img
+                                                    src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                    class="text-white">Join Us</span></a></li>
+                                        <li><a href="#menuContact" class="d-flex align-items-center mb-3"><img
+                                                    src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                    class="text-white">Contact</span></a></li>
+                                        <li><a href="#adminLogin" class="d-flex align-items-center mb-3"><img
+                                                    src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                    class="text-white" id="mobileLog">Logout</span></a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="col-3 rightSide position-fixed"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ml-lg-2">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-end mt-lg-5 mx-lg-5">
+                                <div class="d-flex mt-lg-3">
+                                    <img src="./assets/images/adminLogo.svg" class="img-fluid mr-lg-2" alt="">
+                                    <span class="admin h5 mt-lg-1">Admin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addBook col-md-12 mt-5">
+                        <div class="row">
+                            <div class="ml-lg-4">
+                                <div class="addbook " id="homePage"> Add book</div>
+                                <div class="serachpart mt-lg-5">
+                                    <div class="h5 mb-lg-3 searchbook"> Search book</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group d-flex formdiv ml-lg-4 d-flex flex-column">
+                        <div class="d-flex">
+                            <input type="text" id="AdminSearch" placeholder="Search Book" class="form-control px-lg-5">
+                            <button class="searchBtn "><img src="./assets/images/searchBtn.svg" alt=""></button>
+                        </div>
+                        <div id="AdminSearchResult" class="jumbotron-fluid AdminSearchResult shadow overflow-auto">
+                            <div class="container">
+                                <div id="searchRes" class="search-result-list">
+                                    <ul class="d-flex flex-column"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Book -->
+                <div class="form-book-section  my-5 ml-lg-3">
+                    <div class="h5 mb-lg-4 bookForm">Book form</div>
+                    <div class="jumbotron form-book-section2 bg-white p-lg-4 px-0">
+                        <form id="bookForm" method="post">
+                            <div class="form-group name2">
+                                <label for="bookName" class="mb-2">Book Name</label>
+                                <input type="text" class="form-control form-control-lg form2" id="bookName"
+                                    name="bookName">
+                                <small class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group name2">
+                                <label for="authorName" class="mb-2">Author Name</label>
+                                <input type="text" class="form-control form-control-lg form2" name="authorName"
+                                    id="authorName">
+                                <small class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group name2">
+                                <label for="bookImageUrl" class="mb-2"> Book Image Url</label>
+                                <input type="text" class="  form-control form-control-lg form2" id="bookImageUrl"
+                                    name="bookImageUrl">
+                                <small class="form-text text-danger"> </small>
+                            </div>
+                            <div class="form-group name2">
+                                <label for="publicationYear" class="mb-2">Publication
+                                    Year</label>
+                                <input type="number" class="form-control form-control-lg form2" id="publicationYear"
+                                    name="publicationYear">
+                                <small class="form-text text-danger"> </small>
+                            </div>
+                            <div class="form-group my-lg-4">
+                                <div class="form-check d-flex align-items-center">
+                                    <label class="form-check-label" for="isNew">New</label>
+                                    <input class="form-check-input" type="checkbox" value="new" id="isNew">
+                                </div>
+                            </div>
+                            <div class="form-group mb-lg-4 name2">
+                                <label class="mb-2" for="bookDesc">Description</label>
+                                <textarea rows="4" value='' type="text" maxlength="1000"
+                                    class="form-control form-control-lg form2 mb-lg-2" id="bookDesc" name="bookDesc">
+                                </textarea>
+                                <span id="adminDescCount"><span id="adminDescCountZero">0</span> / 1000</span>
+                                <small class="form-text text-danger" style="display:none"></small>
+                            </div>
+                            <div class="bookType position-relative">
+                                <div class=" d-flex align-items-center ">
+                                    <h3 class="mr-lg-3 h6 bookTypeTitle">Book type</h3>
+                                    <button id="addTypeBtn" type="button" class="bg-transparent border-0 h4">+</button>
+                                    <div id="addTypeSection" class="add-type-section ml-lg-3 my-2 shadow px-3">
+                                        <form action=""
+                                            class="d-flex flex-column justify-content-between w-25 position-absolute">
+                                            <label for="bookTypeInput" class="my-3 mx-lg-2 h6"
+                                                style="font-family: var(--RobotoFont);">Add type</label>
+                                            <input type="text" class="form-control" id="bookTypeInput">
+                                            <button id="bookTypeBtn" type="button"
+                                                class="bookTypeBtn text-center text-white w-100 my-3">Add</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <select class="form-control form-control-lg mb-lg-4 pl-lg-3 h6 form2"
+                                    id="categorySelect">
+                                </select>
+                                <button id="addBookBtn" type="button"
+                                    class="add-new-book border-0 form-control text-white">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Add Book end-->
+
+                <!-- About Store section -->
+                <div class="ml-lg-4 my-5">
+                    <div class="about-store h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">
+                        <h1>About Store</h1>
+                        <div class="storeContent form-book-section mt-lg-2">
+                            <div class="jumbotron form-book-section2 bg-white p-4 px-lg-0">
+                                <form class="mt-2 mx-lg-4">
+                                    <div class="bookTitle form-group name2">
+                                        <label for="title" class="mb-2">Title</label>
+                                        <input type="text" class="form-control form2
+                                form-control-lg" id="title" placeholder="About store title">
+                                    </div>
+                                    <div class="bookImageUrl form-group name2">
+                                        <label for="imageUrl" class="mb-2">Book Image Url</label>
+                                        <input type="text" class="form-control form-control-lg form2" id="imageUrl"
+                                            placeholder="https://image:url/">
+                                    </div>
+                                    <div class="bookDescription form-group mb-lg-4 name2">
+                                        <label for="aboutDescription" class="mb-2">Description</label>
+                                        <textarea name="" id="aboutDescription" maxlength="1000"
+                                            class="form-control mb-2 form-control-lg form2 " rows="3"
+                                            placeholder="Write description..."></textarea>
+                                        <span id="aboutTextarea" class="textarea-limit"><span
+                                                id="aboutTextareaCount">0</span> /
+                                            1000</span>
+                                    </div>
+                                    <button class="about-info-add form-control btn2 text-white">About info add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Store section end-->
+
+
+                <!-- Join  Us section start-->
+                <div class="ml-lg-4 my-5">
+                    <div class="h2 mb-4 bookForm" id="menuJoin">Join Us</div>
+                    <table class=" w-50 table text-center">
+                        <thead class="table1 text-white ">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col"> Email Address</th>
+                            </tr>
+                        </thead>
+                        <tbody id="joinTable"></tbody>
+                    </table>
+                </div>
+                <!-- Join  Us section  end-->
+
+
+                <!-- Contact Us section Start-->
+                <div class="ml-lg-4 my-5 pr-lg-5" id="contact">
+                    <div class="h2 mb-4 bookForm" id="menuContact">Contact Us</div>
+                    <table class="table tablewidth text-center">
+                        <thead class=" table1 text-white ">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Email Address</th>
+                                <th scope="col">Phone Number</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactTable"></tbody>
+                    </table>
+                </div>
+                <!--Contact Us section end-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="./assets/js/db.js"></script>
+    <script src="./assets/js/admin/adminLogin.js"></script>
+    <script src="./assets/js/admin/admin.js"></script>
+</body>
+
+</html>

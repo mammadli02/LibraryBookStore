@@ -1,0 +1,210 @@
+main {
+  margin: 143px 0 134px;
+  z-index: -10;
+}
+.searchSect {
+  margin: 0 100px 0 15%;
+}
+.textt h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 196.19%;
+  color: var(--ColorDarkGreen);
+}
+.slider-section {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 lightgray;
+  padding: 47px 31px;
+}
+
+.book-name {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 47px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--catalogBlackColor);
+}
+
+.author-name {
+  font-weight: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+  color: var(--catalogBlackColor);
+}
+
+.book-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.img-section {
+  padding-right: 30px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.img-section img {
+  width: 100%;
+  height: 300px;
+}
+
+.card-new {
+  background-color: #eb5757;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  font-weight: 900;
+  font-size: 9px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  line-height: 18px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
+}
+
+.content h2 {
+  font-family: var(--Montserrat600);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 196.19%;
+  margin-left: -20px;
+  display: flex;
+  align-items: center;
+  color: var(--ColorDarkGreen);
+}
+.content h3 {
+  font-family: var(--Montserrat600);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 176.19%;
+  color: var(--ColorDarkGreen);
+}
+.searchh {
+  margin-top: 40px;
+  background-color: var(--White);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.searchh2 {
+  margin-top: 40px;
+  background-color: var(--White);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.content p {
+  font-family: var(--Montserrat600);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176.19%;
+  display: flex;
+  align-items: center;
+  color: var(--ColorDarkGreen);
+}
+.form-control {
+  font-family: var(--CrimsonTextFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  border-radius: 5px;
+  color: var(--ColorDarkGreen);
+  height: 69.52px;
+  margin-top: 44px;
+  background: var(--White);
+  border: 1px solid var(--White3);
+  font-family: var(--CrimsonTextFon);
+}
+#exampleFormControlInput1 {
+  font-family: var(--CrimsonTextFont);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  color: var(--Brown);
+}
+#searchBtn {
+  background-color: var(--Orange2);
+  margin-top: 34.48px;
+  height: 65px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--CrimsonTextFon);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  color: var(--White);
+}
+
+.carousel-control-prev {
+  margin-left: -60px;
+  background-image: url(/assets/images/prev.svg);
+  width: 14.79px;
+  height: 46px;
+  margin-top: 200px;
+}
+.carousel-control-next {
+  margin-right: -60px;
+  background-image: url(/assets/images/next.svg);
+  width: 14.79px;
+  height: 46px;
+  margin-top: 200px;
+}
+.fixed-menu {
+  display: none;
+}
+
+/* ********************************************* */
+/* Responsive design */
+@media screen and (max-width: 320px) {
+  .searchSect {
+    margin: auto;
+    width: 80%;
+  }
+  .textt h2 {
+    font-size: 25px;
+    line-height: 49px;
+    text-align: center;
+  }
+  #searchInput,
+  #searchBtn {
+    width: 243px;
+    height: 37px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #searchBtn {
+    margin-bottom: 79px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev,
+  .clientPageNavbar {
+    display: none;
+  }
+  .slider-section {
+    padding: 0;
+  }
+  .img-section {
+    padding-left: 45px;
+  }
+  .img-section img {
+    width: 220px;
+  }
+  .book-name {
+    text-align: center;
+  }
+  .author-name {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .book-description {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

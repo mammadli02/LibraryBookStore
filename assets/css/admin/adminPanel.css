@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+.admin {
+  font-family: var(--RobotoFont);
+}
+#adminPanelNavbar {
+  background-color: var(--ColorRed);
+}
+.mainLogo img {
+  margin: 75px 0 55px 35px;
+}
+.mainNavbar ul li {
+  margin: 0 0 34px 40px;
+}
+.mainNavbar ul li img {
+  margin-right: 13px;
+}
+.mainNavbar ul li a {
+  font-family: var(--MontserratFont);
+}
+.adminpanel {
+  background-color: #fffaf5;
+}
+.image-admin {
+  display: block;
+}
+.menuHeader {
+  display: none;
+}
+.responsiveNavbar {
+  display: none;
+}
+.searchBtn {
+  margin-bottom: 6px;
+  padding: 8px 22px;
+  width: 63px;
+  height: 40px;
+  background: #ff8b00;
+  border-radius: 34px;
+}
+.addbook {
+  font-family: var(--MontserratFont);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 196.19%;
+  color: var(--textcolor);
+}
+.searchbook {
+  font-family: var(--MontserratFont);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--textcolor);
+  line-height: 196.19%;
+}
+#AdminSearch {
+  font-family: var(--PreahvihearFont);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--ininput);
+  border: 2px solid #391f007a;
+  border-radius: 34px;
+  width: 395px;
+  height: 41px;
+  margin-right: 7px;
+}
+.bookForm {
+  font-family: var(--MontserratFont);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 196.19%;
+  color: var(--textcolor);
+}
+.name2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--bookname2);
+  font-family: var(--RobotoFont);
+}
+.form-book-section2 {
+  border-radius: 20px;
+  width: 75%;
+}
+.form2 {
+  border: 1px solid #e2e6ee;
+  box-shadow: 0px 4px 18px #9ea8bd4f;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.btn2 {
+  background-color: var(--Orangebutton);
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--RobotoFont);
+  font-size: 14px;
+  line-height: 16px;
+}
+.table1 {
+  background-color: var(--ColorRed);
+  font-family: var(--NunitoSansFont);
+}
+.tablewidth {
+  width: 90%;
+}
+.sideBarBtn {
+  display: none;
+}
+.sideBar {
+  display: none;
+}
+#AdminSearchResult {
+  padding: 17px 0 19px 20px;
+  width: 400px;
+  height: 150px;
+  border-radius: 35px;
+  background-color: var(--White2);
+}
+
+#AdminSearchResult::-webkit-scrollbar-track {
+  margin: 20px 0 !important;
+}
+.bookTypeTitle {
+  font-family: var(--RobotoFont);
+  font-weight: 400;
+  line-height: 19px;
+  color: #030102;
+}
+#addTypeBtn {
+  color: #28a745;
+  font-weight: 900;
+  padding-top: 0px !important;
+  cursor: pointer;
+}
+#addBookBtn {
+  background-color: var(--Orangebutton);
+  height: 45px;
+  border-radius: 10px;
+  font-family: var(--RobotoFont);
+  font-size: 14px;
+  line-height: 16px;
+}
+#bookTypeBtn {
+  font-family: var(--RobotoFont);
+  background-color: var(--Orangebutton);
+  border-radius: 10px;
+  height: 40px;
+}
+#addTypeSection {
+  width: 200px;
+}
+.add-type-section {
+  border-radius: 25px;
+}
+#categorySelect {
+  height: 50px;
+  font-family: var(--RobotoFont);
+  line-height: 19px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 320px) {
+  .menuHeader {
+    background: #fffaf5;
+    display: block;
+  }
+  #contact {
+    overflow-x: scroll;
+  }
+  #adminPanelNavbar {
+    position: relative;
+    display: none;
+  }
+  .addbook {
+    margin-top: 80px;
+  }
+  #AdminSearchResult {
+    width: 250px;
+    padding: 10px 0px !important ;
+  }
+  .serachpart {
+    margin-bottom: 29px;
+  }
+  #AdminSearch {
+    width: 310px !important;
+  }
+  .searchBtn {
+    border-radius: 5px !important;
+    width: 38px !important;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .adminpanel {
+    overflow-x: hidden;
+  }
+  .img-fluid {
+    display: none;
+  }
+  .admin {
+    display: none;
+  }
+  .form-book-section2 {
+    width: 100%;
+  }
+  .navbar-brand {
+    margin-top: 16px;
+  }
+  .sideBar {
+    display: block;
+    height: 100%;
+  }
+  .leftSide {
+    background-color: var(--ColorRed);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .rightSide {
+    background: rgba(36, 20, 0, 0.7);
+    height: 100%;
+  }
+  .mobileNavImg {
+    margin: 20px 0 70px;
+  }
+  .hamburger {
+    margin: 10px -7px 0 0;
+  }
+  .mobileNavList {
+    font-family: var(--MontserratFont);
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .rightSide {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: rgba(36, 20, 0, 0.7);
+    height: 100%;
+  }
+  .form-book-section2 {
+    margin-top: 10px;
+    padding: 0px !important ;
+  }
+  .table {
+    width: 300px !important;
+  }
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a3a2a2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #720418;
+  border-radius: 10px;
+}

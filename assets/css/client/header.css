@@ -1,0 +1,123 @@
+body {
+  box-sizing: border-box;
+  font-family: var(--MontserratFont);
+  background-color: #fffaf5;
+  overflow-x: hidden;
+  color: var(--ColorDarkGreen);
+}
+/* ****************************** */
+/* Header */
+header {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffaf5;
+}
+.clientLogo {
+  margin-left: 15%;
+}
+.clientPageNavbar li a {
+  margin-right: 21px;
+  color: var(--ColorDarkGreen);
+  font-size: 12px;
+}
+.clientPageNavbar ul li a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.joinUs a {
+  font-family: var(--RobotoFont);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--ColorDarkGreen);
+}
+
+/* ********************************************** */
+/* Join us Modal */
+.modalSection {
+  margin-top: 30%;
+  padding: 30px;
+  width: 600px;
+}
+.modalForm input {
+  height: 70px;
+  margin-top: 35px;
+  border: 1px solid #cecece;
+}
+.modalForm .joinBtn {
+  height: 70px;
+  color: #fff;
+  background: #e16a00;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-top: 86px;
+}
+
+/* ******************************************************* */
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a3a2a2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #720418;
+  border-radius: 10px;
+}
+
+/* ********************************************* */
+/* Responsive design */
+
+@media screen and (max-width: 320px) {
+  .modalSection {
+    padding: 5px;
+    margin: 53% 0 0 23px;
+    width: 260px;
+    height: auto;
+  }
+  .modalForm input {
+    margin-top: 0;
+    height: 46px;
+    font-size: 16px;
+  }
+  .modalForm .joinBtn {
+    height: 46px;
+    margin-top: 30px;
+  }
+  .modal-title {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  .joinUs,
+  .clientLogo {
+    display: none;
+  }
+  .clientPageNavbar {
+    display: none;
+  }
+  .mobileNavClient {
+    background: #fffaf5;
+    display: block !important;
+  }
+  .mobnavList {
+    background-color: rgba(36, 20, 0, 0.9);
+  }
+  .mobnavList ul li {
+    margin: 0 11px 20px;
+  }
+  .mobnavList ul li a {
+    color: #f2f2f2;
+  }
+  .mobnavList img {
+    margin: 43px 11px 73px;
+  }
+}
